@@ -1,0 +1,9 @@
+<ul>
+<li [ngStyle]="{ backgroundColor: getColor()}" class="list-group-item">
+  <h6 style="text-align:right">{{ currentDate | date: 'MMMM d y  H:mm' | uppercase}}</h6>
+  <h4>{{ postTitle }}</h4>
+  <p>{{ postContent }}<p>
+  <button style="background-color:green" class="btn btn-success" (click)="onLiked()">Like</button>
+  <button style="background-color:red" class="btn btn-success" (click)="onDisliked()">Dislike</button>  
+</li>
+</ul>
